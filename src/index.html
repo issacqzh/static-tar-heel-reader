@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <title>Tar Heel Reader</title>
+    <link rel="manifest" href="/manifest.webmanifest">
     ${include('head.mako', sw=1, css='index', js='index') }
+    
+    <script src="index.js"></script>
     <style>
       body {
         margin: 2em auto;
@@ -22,6 +25,7 @@
         text-shadow: 0.05em 0.05em 0.05em white;
       }
     </style>
+    
   </head>
   <body>
     ${include('menu.mako', current='')}

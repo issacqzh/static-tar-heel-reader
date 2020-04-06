@@ -1,7 +1,6 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 % if use_sw and sw:
-<link rel="manifest" href="${copy('manifest.json')}" />
 <meta name="theme-color" content="#99badd" />
 % endif
 % if embedcss:
