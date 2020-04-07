@@ -16,6 +16,7 @@ const staticAssets = [
 '/settings.css',
 '/settings.html',
 '/site.css',
+"/.DS_Store"
 ];
 
 self.addEventListener('install',async e =>{
@@ -56,3 +57,22 @@ async function networkAndCache(req){
 		return cached;
 	}
 }
+self.onsync = function(event) {
+    if(event.tag == 'findbook-sync') {
+        event.waitUntil(fetchbook());
+    }
+};
+
+//i dont know we need a book database for me to fetch
+function fetchbook(){
+    fetch("/.DS_Store")
+    .then(function (response) {
+        return response;
+      })
+      .then(function (text) {
+        console.log('Request successful', text);
+      })
+      .catch(function (error) {
+        console.log('Request failed', error);
+      });
+  }
