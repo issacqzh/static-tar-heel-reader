@@ -16,7 +16,7 @@ const staticAssets = [
 '/settings.css',
 '/settings.html',
 '/site.css',
-"/.DS_Store"
+"/generate.py", //book store
 ];
 
 self.addEventListener('install',async e =>{
@@ -63,9 +63,9 @@ self.onsync = function(event) {
     }
 };
 
-//i dont know we need a book database for me to fetch
+//not sure about the database here
 function fetchbook(){
-    fetch("/.DS_Store")
+    fetch("/generate.py")
     .then(function (response) {
         return response;
       })
