@@ -2,13 +2,22 @@ window.addEventListener('load',() => {
 	registerSW();
 })
 
+//register and background sync of finding a book
 async function registerSW(){
-	if('serviceWorker' in navigator){
-		try{
-			await navigator.serviceWorker.register('sw.js')
-		}catch(e){
-			console.log('SW registration failed')
-		}
-	}
-
+if(navigator.serviceWorker) {
+        navigator.serviceWorker.register('./serviceworker.js')
+        .then(function() {
+            return navigator.serviceWorker.ready
+        })
+        .then(function(registration) {
+            document.getElementById('findbook').addEventListener('click', (event) => {
+                if(registration.sync) {
+                    registration.sync.register('findbook-sync')
+                    .catch(function(err) {
+                        return err;
+                    })
+                }
+            })
+        })
+    }
 }
