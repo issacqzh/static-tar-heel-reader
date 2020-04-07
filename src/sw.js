@@ -2,6 +2,20 @@ const cacheName = "reader";
 
 const staticAssets = [
 './'
+'/index.css',
+'/index.html',
+'/index.js',
+'/book-index.mako',
+'/book.css',
+'/choose.html',
+'/css.mako',
+'/favorite.css',
+'/favorite.html',
+'/find.css',
+'/find.html',
+'/settings.css',
+'/settings.html',
+'/site.css',
 ];
 
 self.addEventListener('install',async e =>{
