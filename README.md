@@ -54,3 +54,10 @@ have reviewed books first followed by unreviewed in order they were created.
 - Filter books with spelling errors.
 - Include [Collections](https://tarheelreader.org/collections/) so that even
   without JavaScript readers can have curated sets.
+
+
+
+### Instructions (Han Guo)
+
+1. Install `aspell` for the system. The command for Mac is: `brew install aspell`
+2. Install Python dependencies. I built one myself: `pip install -r requirements.txt`

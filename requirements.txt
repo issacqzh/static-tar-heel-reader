@@ -1,0 +1,9 @@
+Mako
+stemming
+aspell-python-py3
+pyspellchecker
+contractions
+pandas
+sqlitedict
+html5print
+tqdm
