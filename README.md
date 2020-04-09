@@ -61,4 +61,5 @@ have reviewed books first followed by unreviewed in order they were created.
 
 1. Install `aspell` for the system. The command for Mac is: `brew install aspell`
 2. Install Python dependencies. I built one myself: `pip install -r requirements.txt`
-3. Go to `data/`, run `python fetchBooks.py`. Feel free to change the number in `for page in trange(1, 10000):` in the file to save time. 
+3. Go to `data/`, run `python fetchBooks.py`. Feel free to change the number in `for page in trange(1, 10000):` in the file to save time.
+4. If you want to fetch all the images, do `wget -r --no-parent https://test.tarheelreader.org/` 
