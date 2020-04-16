@@ -65,4 +65,4 @@ have reviewed books first followed by unreviewed in order they were created.
 4. (Optional) Go to `data/`, run `python fetchBooks.py`. Feel free to change the number in `for page in trange(1, 10000):` in the file to save time. If you want to fetch all the images, do `wget -r --no-parent https://test.tarheelreader.org/`.
 5. Compile all the files via `make`. Note that you might need to change the Shebang of `copypage.py` and `generate.py` if you are using virtualenv or have multiple versions of Python installed. An explanation of shebang is available at [here](https://bash.cyberciti.biz/guide/Shebang). An example change would be changing the shebang to `#!/usr/bin/env python`.
 6. You might need to remove the `--public gb.cs.unc.edu` in `package.json`.
-7. You are all set, do `npm run start` (or `local`, `nosw`) and go to corresponding addresses.
+7. You are all set, do `npm run local` (or `nosw`, etc) and go to corresponding addresses.
