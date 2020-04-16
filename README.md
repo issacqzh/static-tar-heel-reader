@@ -61,5 +61,8 @@ have reviewed books first followed by unreviewed in order they were created.
 
 1. Install `aspell` for the system. The command for Mac is: `brew install aspell`
 2. Install Python dependencies. I built one myself: `pip install -r requirements.txt`
-3. Go to `data/`, run `python fetchBooks.py`. Feel free to change the number in `for page in trange(1, 10000):` in the file to save time.
-4. If you want to fetch all the images, do `wget -r --no-parent https://test.tarheelreader.org/` 
+3. Install npm dependencies via `npm install`.
+4. (Optional) Go to `data/`, run `python fetchBooks.py`. Feel free to change the number in `for page in trange(1, 10000):` in the file to save time. If you want to fetch all the images, do `wget -r --no-parent https://test.tarheelreader.org/`.
+5. Compile all the files via `make`. Note that you might need to change the Shebang of `copypage.py` and `generate.py` if you are using virtualenv or have multiple versions of Python installed. An explanation of shebang is available at [here](https://bash.cyberciti.biz/guide/Shebang).
+6. You might need to remove the `--public gb.cs.unc.edu` in `package.json`.
+7. You are all set, do `npm run start/local/nosw` and go to corresponding addresses.
