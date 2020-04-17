@@ -7,7 +7,7 @@
     "production": "webpack  --config webpack.prod.js --mode=production",
     "start": "webpack-dev-server --config webpack.dev.js",
     "nosw": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0 --public gb.cs.unc.edu --port 8081",
-    "local": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0 --public gb.cs.unc.edu",
+    "local": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0",
     "tsc": "tsc --lib dom,es6,dom.iterable,scripthost",
     "test": "jest"
   },
