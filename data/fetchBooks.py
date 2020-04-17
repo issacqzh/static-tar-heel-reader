@@ -3,12 +3,17 @@ import requests
 from sqlitedict import SqliteDict
 import gzip
 import json
+from tqdm import trange
 
 
 books = SqliteDict("allbooks.sqlite", autocommit=True)
 
 
+<<<<<<< HEAD
 for page in range(1, 10):
+=======
+for page in trange(1, 10000):
+>>>>>>> 5310e7ee68a67590e58c94d4e7ed4a64d4fef9ea
     if page % 100 == 0:
         print(page)
     url = (
